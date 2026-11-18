@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El café del tiempo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="p5.js"></script>
+    <script defer src="sketch.js"></script>
+    <script defer src="timer.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>El café del tiempo</h1>
+      <p class="hora">Hora local <time id="hora-local">--:--:--</time></p>
+      <div id="escena"></div>
+      <section aria-label="Temporizador de descanso">
+        <p id="tiempo" role="timer" aria-label="Tiempo restante">05:00</p>
+        <label for="duracion">Duración (<span id="minutos">5</span> min)</label>
+        <input id="duracion" type="range" min="1" max="30" value="5">
+        <div class="controles">
+          <button id="accion" type="button">Iniciar</button>
+          <button id="reiniciar" type="button">Reiniciar</button>
+        </div>
+        <p id="estado" role="status"></p>
+      </section>
+      <p class="descansos">Descansos completados <strong id="descansos">0</strong></p>
+      <footer>Rafael Menéndez</footer>
+    </main>
+  </body>
+</html>

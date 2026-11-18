@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "El café del tiempo",
+  "version": "0.1.0",
+  "description": "Una taza de café para acompañar tus descansos.",
+  "action": {
+    "default_title": "El café del tiempo",
+    "default_popup": "popup.html"
+  }
+}

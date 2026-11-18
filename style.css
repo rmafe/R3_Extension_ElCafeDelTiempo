@@ -1,0 +1,103 @@
+@font-face {
+  font-family: DynaPuff;
+  src: url("DynaPuff-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+body {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0;
+  padding: 14px 10px 10px;
+  background: #f7f3e8;
+  color: #422c20;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font:
+    600 22px/1.2 DynaPuff,
+    system-ui,
+    sans-serif;
+}
+
+.hora {
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+
+time,
+#tiempo {
+  font-variant-numeric: tabular-nums;
+}
+
+#tiempo {
+  margin: 9px 0;
+  font-size: 31px;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+}
+
+input[type="range"] {
+  width: 90%;
+  accent-color: #6f4e37;
+}
+
+.controles {
+  display: flex;
+  gap: 8px;
+  margin-top: 9px;
+}
+
+button {
+  flex: 1;
+  padding: 7px;
+  border: 1px solid #6f4e37;
+  border-radius: 7px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+#accion {
+  background: #6f4e37;
+  color: white;
+}
+
+#estado {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+
+#estado:empty {
+  margin: 0;
+}
+
+.descansos {
+  margin: 12px 0 0;
+  font-size: 13px;
+}
+
+#escena {
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+canvas {
+  display: block;
+}
+
+footer {
+  margin-top: 8px;
+  font-size: 12px;
+}
